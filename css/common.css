@@ -2,6 +2,13 @@
 
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+@font-face {
+  font-family: "Nike Futura";
+  font-style: normal;
+  src: url(../fonts/nike-futura.woff2);
+  -webkit-font-smoothing: antialiased;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +23,7 @@ body {
   line-height: 1.5;
   color: rgb(17, 17, 17); /* #111 */
   -webkit-font-smoothing: antialiased;
-  background: black;
+  background: white;
 }
 
 ul {
@@ -66,6 +73,10 @@ p {
 
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 #gnb {
@@ -78,7 +89,7 @@ header {
   width: 100%;
   height: 36px;
   background: rgb(245, 245, 245);
-  padding: 0 56px;
+  padding: 0 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,8 +123,8 @@ header {
 }
 #gnb_main {
   width: 100%;
-  height: 68px;
-  padding: 0 56px;
+  height: 60px;
+  padding: 0 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -269,6 +280,14 @@ header {
   }
 }
 
+#m_gnb {
+  display: none;
+}
+
+#m_lnb {
+  display: none;
+}
+
 /* 모바일용 네비게이션 CSS */
 
 @media screen and (max-width: 1023px) {
@@ -280,7 +299,9 @@ header {
     width: 100%;
     background: white;
     padding: 0 24px;
+    display: block;
   }
+
   #m_gnb_main {
     width: 100%;
     height: 68px;
@@ -322,12 +343,14 @@ header {
   #m_lnb {
     background: white;
     width: 100%;
+    height: calc(100vh - 60px);
     padding: 0 48px;
     min-height: 100vh;
-    position: fixed;
-    top: 68px;
-    left: 100vw;
+    position: relative;
     overflow: scroll;
+    display: block;
+    top: 0px;
+    left: 100vw;
     transition: left 0.4s;
   }
 
@@ -341,7 +364,7 @@ header {
     border-bottom: 1px solid rgb(229, 229, 229);
     padding: 0 0 12px 0;
     overflow: hidden;
-    max-height: 48px;
+    max-height: 44px;
     transition: max-height 0.4s;
   }
 
@@ -350,17 +373,17 @@ header {
     height: 18px;
     color: rgb(117, 117, 117);
     opacity: 0.4;
+    transition: all 0.4s;
   }
 
   .m_lnb_menu li {
-    display: none;
+    display: block;
+    margin: 6px 0 6px 12px;
   }
-
   .m_lnb_menu li h3 {
     border-bottom: 1px solid rgb(229, 229, 229);
     padding: 0 0 6px 0;
   }
-
   .m_lnb_menu h2 {
     width: 100%;
     display: flex;

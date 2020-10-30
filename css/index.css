@@ -1,0 +1,329 @@
+#alert_banner {
+  width: 100%;
+  height: 58px;
+  padding-top: 10px;
+  background: rgb(245, 245, 245);
+  margin-top: 96px;
+}
+
+#alert_banner div {
+  text-align: center;
+}
+
+#alert_banner p {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#alert_banner a {
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: underline;
+}
+
+#hero {
+  width: 100%;
+  height: auto;
+  padding: 0 48px;
+}
+
+.hero_wrap {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  padding: 0 8px;
+  background: url(../img/nike-just-do-it.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.hero_wrap_title {
+  position: absolute;
+  left: 36px;
+  bottom: 36px;
+}
+
+.hero_wrap_title h2 {
+  font-family: "Nike Futura";
+  font-size: 72px;
+  line-height: 58px;
+  color: white;
+}
+
+.hero_wrap_title p {
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.hero_wrap_title button {
+  width: 86px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* trending section */
+
+#trending {
+  width: 100%;
+  height: auto;
+  padding: 0 48px;
+}
+
+.trending_title {
+  margin-top: 84px;
+  margin-bottom: 27px;
+  width: 100%;
+}
+
+.trending_contents_wrap {
+  width: 100%;
+  display: flex;
+}
+
+.trending_contents_wrap_1 {
+  position: relative;
+  width: calc(50% - 8px);
+  margin-right: 8px;
+  height: 700px;
+  background: url(../img/nike-just-do-it\ 1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.trending_contents_wrap_2 {
+  position: relative;
+  width: calc(50% - 8px);
+  margin-left: 8px;
+  height: 700px;
+  background: url(../img/nike-just-do-it\ 2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.trending_contents_title {
+  position: absolute;
+  left: 38px;
+  bottom: 38px;
+}
+
+.trending_contents_title p {
+  font-size: 20px;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.trending_contents_title button {
+  width: 86px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 8px 8px 0 0;
+}
+
+/* Footwear Section */
+
+#footwear {
+  width: 100%;
+  padding-top: 84px;
+}
+
+.footwear_wrap {
+  width: 100%;
+  height: auto;
+}
+
+.footwear_wrap h2 {
+  margin-left: 46px;
+  margin-bottom: 24px;
+}
+
+.footwear_title {
+  margin-top: 84px;
+  margin-bottom: 27px;
+  width: 100%;
+}
+
+.footwear_ul_scroll {
+  width: 100%;
+  overflow-x: scroll;
+  padding-bottom: 30px;
+}
+
+.footwear_ul {
+  width: 300%;
+  height: auto;
+  display: flex;
+}
+
+.footwear_ul li {
+  width: 30vw;
+  position: relative;
+  margin-right: 16px;
+}
+
+.footwear_ul li:first-child {
+  margin-left: 56px;
+}
+
+.footwear_ul li:last-child {
+  margin: 0;
+}
+
+.footwear_ul li h3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  line-height: 24px;
+  padding-right: 16px;
+  font-size: 16px;
+}
+
+.footwear_ul li p {
+  color: rgb(117, 117, 117);
+}
+
+.footwear_ul img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  #alert_banner {
+    margin-top: 60px;
+  }
+
+  #hero {
+    padding: 0 20px;
+  }
+
+  .hero_wrap {
+    height: 700px;
+  }
+
+  /* trending setion */
+
+  #trending {
+    padding: 0 20px;
+  }
+
+  .trending_contents_wrap_1,
+  .trending_contents_wrap_2 {
+    height: 500px;
+  }
+
+  .trending_contents_title {
+    left: 36px;
+    bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .hero_wrap {
+    background: none;
+  }
+
+  .hero_wrap figure {
+    width: 100%;
+    height: 500px;
+    display: block;
+    background: url(../img/nike-just-do-it.jpg) no-repeat center center;
+  }
+
+  .hero_wrap_title {
+    position: static;
+    left: 36px;
+    bottom: 36px;
+    margin-top: 18px;
+  }
+
+  .hero_wrap_title br {
+    display: none;
+  }
+
+  .hero_wrap_title h2 {
+    font-family: "Nike Futura";
+    font-size: 48px;
+    line-height: 40px;
+    color: rgb(17, 17, 17);
+  }
+
+  .hero_wrap_title p {
+    color: rgb(17, 17, 17);
+    margin-top: 6px;
+    margin-bottom: 18px;
+  }
+
+  .hero_wrap_title button {
+    width: 86px;
+    height: 40px;
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* Trending Section */
+
+  .trending_title {
+    padding: 0 8px;
+  }
+
+  .trending_contents_wrap {
+    display: block;
+  }
+
+  .trending_contents_wrap_1,
+  .trending_contents_wrap_2 {
+    width: calc(100% - 8px);
+    height: 500px;
+    margin-left: 8px;
+  }
+
+  .trending_contents_wrap_1 {
+    background: url(../img/nike-just-do-it\ 6.jpg);
+    background-size: cover;
+  }
+
+  .trending_contents_wrap_2 {
+    background: url(../img/nike-just-do-it\ 14.jpg);
+    background-size: cover;
+  }
+
+  .trending_contents_wrap_2 {
+    margin-top: 8px;
+  }
+
+  .trending_contents_title {
+    left: 24px;
+    bottom: 24px;
+  }
+
+  .trending_contents_wrap_1 .trending_contents_title p {
+    color: #000;
+  }
+
+  .trending_contents_title button {
+    width: 92px;
+  }
+
+  .trending_contents_wrap_1 button {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .hero_wrap_title br {
+    display: block;
+  }
+}
