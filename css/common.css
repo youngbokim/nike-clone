@@ -2,13 +2,6 @@
 
 /* font-family: 'Noto Sans KR', sans-serif; */
 
-@font-face {
-  font-family: "Nike Futura";
-  font-style: normal;
-  src: url(../fonts/nike-futura.woff2);
-  -webkit-font-smoothing: antialiased;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +17,11 @@ body {
   color: rgb(17, 17, 17); /* #111 */
   -webkit-font-smoothing: antialiased;
   background: white;
+}
+
+@font-face {
+  font-family: "Nike Futura";
+  src: url(../fonts/nike-futura.woff2) format("woff2");
 }
 
 ul {
@@ -76,7 +74,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 999;
 }
 
 #gnb {
@@ -225,7 +223,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 0;
-  overflow: hidden;
+  overflow-y: hidden;
   transition: max-height 1s;
   background: white;
 }
@@ -291,6 +289,11 @@ header {
 /* 모바일용 네비게이션 CSS */
 
 @media screen and (max-width: 1023px) {
+  header {
+    height: 60px;
+    overflow: hidden;
+  }
+
   #gnb {
     display: none;
   }
@@ -343,11 +346,10 @@ header {
   #m_lnb {
     background: white;
     width: 100%;
+    padding: 0 48px 40px;
     height: calc(100vh - 60px);
-    padding: 0 48px;
-    min-height: 100vh;
     position: relative;
-    overflow: scroll;
+    overflow-y: scroll;
     display: block;
     top: 0px;
     left: 100vw;
@@ -363,7 +365,7 @@ header {
     margin: 12px 0;
     border-bottom: 1px solid rgb(229, 229, 229);
     padding: 0 0 12px 0;
-    overflow: hidden;
+    overflow-y: hidden;
     max-height: 44px;
     transition: max-height 0.4s;
   }
@@ -471,7 +473,6 @@ header {
 
 section {
   width: 100%;
-  height: 100vh;
 }
 
 /* Footer CSS */
