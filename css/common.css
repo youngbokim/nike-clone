@@ -24,6 +24,11 @@ body {
   src: url(../fonts/nike-futura.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Nike TG";
+  src: url(../fonts/niketg.woff2) format("woff2");
+}
+
 ul {
   list-style: none;
 }
@@ -286,6 +291,124 @@ header {
   display: none;
 }
 
+/* footer Section */
+
+footer {
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+
+.footer_upper a {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+
+.footer_bottom a {
+  color: #7e7e7e;
+  font-size: 10px;
+}
+
+.footer_wrap {
+  padding: 40px 48px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer_upper {
+  width: 100%;
+  display: flex;
+  padding: 0 0 20px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.4);
+}
+
+.footer_menu {
+  display: flex;
+  color: white;
+  width: 75%;
+}
+
+.footer_menu ul {
+  width: 25%;
+  padding: 0 8px;
+}
+
+.footer_menu ul li {
+  margin-bottom: 8px;
+}
+
+.footer_menu_title li a {
+  font-family: "Nike TG";
+  font-weight: 600;
+  color: white;
+}
+
+.footer_menu_title {
+  color: white;
+}
+
+.footer_sns {
+  width: 25%;
+}
+
+.footer_sns ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer_sns ul li {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(17, 17, 17);
+  border-radius: 15px;
+  margin-left: 16px;
+}
+
+.footer_bottom {
+  width: 100%;
+  display: flex;
+  padding: 20px 8px;
+  align-items: center;
+  font-size: 10px;
+}
+
+.footer_bottom ul {
+  display: flex;
+  width: 50%;
+}
+
+.footer_bottom ul:last-child {
+  justify-content: flex-end;
+}
+
+.footer_bottom ul li {
+  margin-right: 24px;
+}
+
+.footer_bottom_copy li {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.footer_bottom_copy li a {
+  display: flex;
+}
+
+.footer_bottom_copy li a span {
+  display: block;
+  color: white;
+  margin-left: 6px;
+}
+
+.footer_bottom_support li {
+  margin-left: 24px;
+}
+.footer_bottom_support li a {
+  display: flex;
+  align-items: center;
+}
+
 /* 모바일용 네비게이션 CSS */
 
 @media screen and (max-width: 1023px) {
@@ -476,3 +599,72 @@ section {
 }
 
 /* Footer CSS */
+
+.footer_wrap {
+  padding: 40px 20px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+.footer_menu ul {
+  width: 33.3333%;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 693px) {
+  .footer_wrap {
+    padding: 40px 20px 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer_upper {
+    flex-wrap: wrap;
+  }
+
+  .footer_menu {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_menu ul {
+    width: 33.3333%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.4);
+    margin-bottom: 20px;
+  }
+
+  .footer_menu ul:last-child {
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .footer_sns ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .footer_sns ul li:first-child {
+    margin: 0;
+  }
+
+  .footer_bottom,
+  .footer_bottom_copy,
+  .footer_bottom_support {
+    flex-wrap: wrap;
+  }
+
+  .footer_bottom_copy li,
+  .footer_bottom_support li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer_bottom ul {
+    width: 100%;
+  }
+
+  .footer_bottom ul:last-child {
+    justify-content: flex-end;
+  }
+}

@@ -373,6 +373,13 @@
   color: rgb(117, 117, 117);
 }
 
+/* footer section */
+
+/* 모니터 반응형 CSS */
+
+@media screen and (mat-widht: 1440px) {
+}
+
 /* 모바일 반응형 CSS */
 
 @media screen and (max-width: 1023px) {
@@ -473,23 +480,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-footer {
-  width: 100%;
-  background: rgb(17, 17, 17);
-  color: white;
-}
-footer a {
-  color: white;
-}
-.footer_wrap {
-  padding: 40px 40px 0;
-  margin: 0 auto;
-  width: 1440px;
-}
-.footer_menu {
-  display: flex;
-  color: white;
 }
 
 @media screen and (max-width: 639px) {
