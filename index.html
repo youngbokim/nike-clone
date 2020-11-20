@@ -811,8 +811,10 @@
     <main>
       <section id="alert_banner">
         <div>
-          <p>Up to 40% off</p>
-          <a>Shop Our Latest Sale Styles</a>
+          <p id="banner_text_1">Up to 40% off</p>
+          <a id="banner_text_2" href="https://www.nike.com/w/sale-3yaep"
+            >Shop Our Latest Sale Styles</a
+          >
         </div>
       </section>
 
@@ -1097,10 +1099,10 @@
 
     <footer>
       <div class="footer_wrap">
-        <div>
+        <div class="footer_upper">
           <div class="footer_menu">
-            <ul>
-              <li><a href="#">Gift Cards</a></li>
+            <ul class="footer_menu_title">
+              <li><a href="#">GIFT CARDS</a></li>
               <li><a href="#">PROMOTION</a></li>
               <li><a href="#">FIND A STORE</a></li>
               <li><a href="#">SIGN UP FOR EMAIL</a></li>
@@ -1110,31 +1112,31 @@
             </ul>
             <ul>
               <li><a href="#">GET HELP</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Shipping and Delivery</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">Gift Card Balance</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
             <ul>
               <li><a href="#">ABOUT NIKE</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Purpose</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">CA Supply Chains Act</a></li>
             </ul>
           </div>
-          <div>
+          <div class="footer_sns">
             <ul>
               <li>
                 <a href="#">
                   <svg
                     class="social-link-icon"
                     width="30px"
-                    fill="#111"
+                    fill="#7e7e7e"
                     height="30px"
                     viewBox="0 0 24 24"
                   >
@@ -1149,7 +1151,7 @@
                   <svg
                     class="social-link-icon"
                     width="30px"
-                    fill="#111"
+                    fill="#7e7e7e"
                     height="30px"
                     viewBox="0 0 24 24"
                   >
@@ -1164,7 +1166,7 @@
                   <svg
                     class="social-link-icon"
                     width="30px"
-                    fill="#111"
+                    fill="#7e7e7e"
                     height="30px"
                     viewBox="0 0 24 24"
                   >
@@ -1179,7 +1181,7 @@
                   <svg
                     class="social-link-icon"
                     width="30px"
-                    fill="#111"
+                    fill="#7e7e7e"
                     height="30px"
                     viewBox="0 0 24 24"
                   >
@@ -1192,12 +1194,21 @@
             </ul>
           </div>
         </div>
-        <div>
-          <ul>
-            <li>United States</li>
+        <div class="footer_bottom">
+          <ul class="footer_bottom_copy">
+            <li>
+              <a href="">
+                <svg height="15px" width="18px" fill="#fff" viewBox="0 0 42 58">
+                  <path
+                    d="M21 0C9.4 0 0 9.5 0 21.2 0 39.9 21 58 21 58s21-18.1 21-36.8C42 9.5 32.6 0 21 0zm0 31c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"
+                  ></path></svg
+                ><span>United States</span></a
+              >
+            </li>
+
             <li>© 2020 Nike, Inc. All Rights Reserved</li>
           </ul>
-          <ul>
+          <ul class="footer_bottom_copy">
             <li><a herf="#">Guides</a></li>
             <li><a herf="#">Terms of Sale</a></li>
             <li><a herf="#">Terms of Use</a></li>
@@ -1207,111 +1218,6 @@
       </div>
     </footer>
 
-    <script>
-      function lnbOpen() {
-        document.getElementById("lnb").style = "max-height:600px;";
-      }
-
-      function lnbClose() {
-        document.getElementById("lnb").style = "max-height:0px;";
-      }
-
-      function lnbShow(lnbNumber) {
-        for (i = 0; i < 6; i++) {
-          document.getElementsByClassName("lnb_wrap")[i].style =
-            "display:none;";
-        }
-
-        document.getElementsByClassName("lnb_wrap")[lnbNumber].style =
-          "display:flex;";
-
-        document.getElementById("lnb").style = "animation:fade-in 1s forwards;";
-      }
-
-      function lnbHide() {
-        document.getElementById("lnb").style =
-          "animation:fade-out 1s forwards; ";
-      }
-
-      // 모바일 메뉴 코드
-
-      function mLnbShow() {
-        document.getElementById("main_header").style = "height:auto;";
-        document.getElementById("m_lnb").style = "left:0;";
-        document.getElementById("m_gnb_main_menubutton_show").style =
-          " display:none;";
-        document.getElementById("m_gnb_main_menubutton_hide").style =
-          " display:block;";
-      }
-      function mLnbHide() {
-        document.getElementById("m_lnb").style = "left:100vw;";
-        document.getElementById("m_gnb_main_menubutton_show").style =
-          " display:block;";
-        document.getElementById("m_gnb_main_menubutton_hide").style =
-          " display:none;";
-        document.getElementById("main_header").style = "height:60px;";
-      }
-
-      // 모바일 메뉴 아코디온 코드
-      var mLnbMenuState = [0, 0, 0, 0, 0, 0];
-      var menulinkState = [0, 0, 0, 0];
-
-      function mLnbMenuOpen(menuNumber) {
-        for (i = 0; i < 6; i++) {
-          document.getElementsByClassName("m_lnb_menu")[i].style =
-            " max-height:44px;";
-
-          document.getElementsByClassName("m_lnb_menu_img")[i].style =
-            "transform: rotate(0deg);";
-
-          if (mLnbMenuState[menuNumber] == 0) {
-            mLnbMenuState[i] = 0;
-          }
-        }
-
-        if (mLnbMenuState[menuNumber] == 0) {
-          document.getElementsByClassName("m_lnb_menu")[menuNumber].style =
-            " max-height:600px;";
-
-          document.getElementsByClassName("m_lnb_menu_img")[menuNumber].style =
-            "transform: rotate(180deg);";
-
-          mLnbMenuState[menuNumber] = 1;
-        } else {
-          document.getElementsByClassName("m_lnb_menu")[menuNumber].style =
-            " max-height:44px;";
-
-          document.getElementsByClassName("m_lnb_menu_img")[menuNumber].style =
-            "transform: rotate(0deg);";
-
-          mLnbMenuState[menuNumber] = 0;
-        }
-      }
-
-      document.getElementsByClassName("menulink_ul")[0].style = {};
-
-      function menulinkOpen(menuNumber) {
-        for (i = 0; i < 4; i++) {
-          document.getElementsByClassName("menulink_ul")[i].style =
-            "max-height:40px;";
-
-          if (menulinkState[menuNumber] == 0) {
-            menulinkState[i] = 0;
-          }
-        }
-
-        if (menulinkState[menuNumber] == 0) {
-          document.getElementsByClassName("menulink_ul")[menuNumber].style =
-            "max-height:600px;";
-
-          menulinkState[menuNumber] = 1;
-        } else {
-          document.getElementsByClassName("menulink_ul")[menuNumber].style =
-            "max-height:44px;";
-
-          menulinkState[menuNumber] = 0;
-        }
-      }
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
